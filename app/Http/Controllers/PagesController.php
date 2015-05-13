@@ -13,9 +13,9 @@ class PagesController extends Controller {
 		// return view('contact');
 		//		return "Hello Mesho in contact page! ";
 		$title = "Contact page";
-		$body  = "this is the body of contact page and actually I don't know what I should write :D ";
-		return view('contact', compact('title', 'body'));
-
+		$body  = "This is the body of contact page and actually I don't know what I should write :D ";
+		$team  = ["Gendy", "Shaimaa", "Bedeer", "Khattab", "salah", "kilany", "aya", "samar", "ibrahim"];
+		return view('contact', compact('title', 'body', 'team'));
 	}
 
 }

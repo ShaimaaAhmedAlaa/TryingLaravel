@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>
-	{{ $title }}
+@extends ('master')
+@section ('content')
 
-
-	</title>
-</head>
-<body>
 	<div class="jumbotron">
-  	<h1>Hello, world!</h1>
- 	<p>...</p>
- 	<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-</div>
-<section>
-<?php echo $body;?>
-{!! $mesho !!}
-</section>
-</body>
-</html>
+  		<h1>Hello, world!</h1>
+ 		<p>This is my new workd using bootstrap with Laravel5 </p>
+ 		<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+	</div>
+	{!! $body !!}
+	{!! $mesho !!}
+@stop
 

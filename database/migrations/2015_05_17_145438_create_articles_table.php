@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateAticlesTable extends Migration {
+class CreateArticlesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -14,7 +14,8 @@ class CreateAticlesTable extends Migration {
 		Schema::create('articles', function (Blueprint $table) {
 				$table->increments('id');
 				$table->string('title');
-				$table->text('body');
+				$table->text('body')->nullable();
+				$table->text('photo')->nullable();
 				$table->timestamps();
 			});
 	}

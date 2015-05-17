@@ -25,6 +25,16 @@ Route::get('/pages', ' PagesController@pages');
 
 Route::get('/contact', 'PagesController@contact');
 
+// Route::get('/articles', 'ArticlesController');
+// Route::get('/articles/edit', 'ArticlesController@edit');
+// Route::get('/articles/create', 'ArticlesController@create');
+// Route::get('/articles/show', 'ArticlesController@show');
+// Route::get('/articles/index', 'ArticlesController@index');
+
+// instead of what i wrote up i can make all of that in one route
+//because all of it is a full model
+Route::resource('/articles', 'ArticlesController');
+
 Route::controllers([
 		'auth'     => 'Auth\AuthController',
 		'password' => 'Auth\PasswordController',
